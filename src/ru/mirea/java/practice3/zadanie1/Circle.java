@@ -6,12 +6,12 @@ public class Circle extends Shape {
     protected double radius;
     @Override
     public double getArea() {
-        return 0;
+        return Math.PI*radius*radius;
     }
 
     @Override
     public double getPerimeter() {
-        return 0;
+        return 2*Math.PI*radius;
     }
 
     @Override
