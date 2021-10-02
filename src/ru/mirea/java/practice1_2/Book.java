@@ -1,4 +1,4 @@
-package ru.mirea.java.practice12;
+package ru.mirea.java.practice1_2;
 
 public class Book {
 

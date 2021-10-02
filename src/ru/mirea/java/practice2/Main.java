@@ -1,7 +1,5 @@
 package ru.mirea.java.practice2;
 
-import ru.mirea.java.practice11.Ball;
-
 public class Main {
     public static void main(String[] args) {
         Author one =  new Author( "Tan Ah Teck",'M',"ahTeck@somewhere.com");
