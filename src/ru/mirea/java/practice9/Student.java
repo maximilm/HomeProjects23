@@ -1,27 +1,28 @@
+
 package ru.mirea.java.practice9;
 
 public class Student {
-    private String FIO;
-    private String INN;
+    private String name;
+    private String inn;
 
-    public Student(String fio, String inn){
-        FIO = fio;
-        INN = inn;
+    public Student(String name, String inn){
+        this.name = name;
+        this.inn = inn;
     }
 
-    public String getFIO() {
-        return FIO;
+    public String getName() {
+        return name;
     }
 
-    public void setFIO(String FIO) {
-        this.FIO = FIO;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getINN() {
-        return INN;
+    public String getInn() {
+        return inn;
     }
 
-    public void setINN(String INN) {
-        this.INN = INN;
+    public void setInn(String inn) {
+        this.inn = inn;
     }
 }
