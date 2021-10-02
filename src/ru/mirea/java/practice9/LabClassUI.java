@@ -146,9 +146,9 @@ public class LabClassUI extends JPanel implements LabClass {
         boolean f = true;
         try{
             for (Student student: students){
-                if (student.getFIO().equals(s.getFIO())){
+                if (student.getName().equals(s.getName())){
                     f = false;
-                    if(s.getINN().equals(student.getINN())){
+                    if(s.getInn().equals(student.getInn())){
                         mainLabel.setText("Заказ оформлен");
                     } else
                         throw new EmptyStringExeption();
@@ -167,7 +167,7 @@ public class LabClassUI extends JPanel implements LabClass {
     @Override
     public void AddStudent(Student s) {
         try {
-            if (!(s.getINN().equals("") || s.getFIO().equals(""))) {
+            if (!(s.getName().equals("") || s.getInn().equals(""))) {
                 students.add(s);
                 mainLabel.setText("Студент успешно добавлен");
             } else {
@@ -181,7 +181,7 @@ public class LabClassUI extends JPanel implements LabClass {
 
     @Override
     public void SortStudents() {
-        Comparator<Student> comp = new SortingStudentsByGPA();
+        Comparator<Student> comp = new SortingStudents();
         students.sort(comp);
         mainLabel.setText("Список успешно отсортирован");
     }
